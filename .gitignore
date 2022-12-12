@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/flask
 # Edit at https://www.toptal.com/developers/gitignore?templates=flask
 
+### Personal Access Token ###
+notes.txt
+
 ### Flask ###
 instance/*
 !instance/.gitignore
