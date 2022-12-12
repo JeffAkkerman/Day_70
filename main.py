@@ -22,6 +22,8 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 login_manager = LoginManager()
 login_manager.init_app(app)
+app.app_context().push()  # Not sure why but this is needed to create the Users table in the db
+
 
 
 @login_manager.user_loader
